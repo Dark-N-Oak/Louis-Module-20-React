@@ -1,3 +1,154 @@
-.about {
-    background-color: aquamarine;
+/* Basic reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Make the wrapper take up the full height of the viewport */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Content area should take up available space */
+.content {
+    flex: 1;
+}
+
+body {
+    background-color: #387C44;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkslategrey;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.header {
+    background: darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style each list item */
+  .nav-item {
+    margin: 0;
+  }
+  
+  /* Style the links to look like tabs */
+  .nav-link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0; /* Rounded corners for the top */
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Style for active tab */
+  .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Add a hover effect */
+  .nav-link:hover {
+    background-color: #e2e6ea;
+  }
+
+  /* Contact.css */
+
+/* Container for centering content */
+.container {
+  max-width: 600px;           /* Maximum width of the container */
+  margin: 0 auto;             /* Center the container horizontally */
+  padding: 20px;              /* Add padding around the content */
+}
+
+/* Center text inside the container */
+.text-center {
+  text-align: center;
+}
+
+/* Style the form */
+.form {
+  display: flex;
+  flex-direction: column;     /* Arrange form fields vertically */
+  gap: 10px;                  /* Space between form fields */
+}
+
+/* Style for form input fields */
+.form input {
+  padding: 10px;              /* Add padding inside input fields */
+  border: 1px solid #ccc;     /* Light grey border */
+  border-radius: 4px;         /* Rounded corners */
+  font-size: 16px;            /* Increase font size */
+  width: 100%;                /* Make input fields take full width */
+}
+
+/* Style for error messages */
+.error {
+  color: #dc3545;             /* Red color for error text */
+  font-size: 14px;            /* Smaller font size */
+  margin: 5px 0;              /* Margin around error messages */
+}
+
+/* Style for the submit button */
+button {
+  padding: 10px 20px;         /* Add padding inside the button */
+  border: none;               /* Remove default border */
+  border-radius: 4px;         /* Rounded corners */
+  background-color: #007bff;  /* Blue background */
+  color: white;               /* White text */
+  font-size: 16px;            /* Increase font size */
+  cursor: pointer;            /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Style for button on hover */
+button:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
+.Home  {
+  
+}
+
+.About {
+
+}
+
+.Projects {
+
+}
+
+.Contact {
+
+}
+
+.Home, .About, .Projects, .Contact {
+  text-align: center;
 }
